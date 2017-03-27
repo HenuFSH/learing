@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pid=$(pgrep simoncpp)
+echo $pid
+if [ -n "$pid" ]; then
+   kill -9 ${pid}
+else
+  ./simoncpp
+fi
