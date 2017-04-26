@@ -1,0 +1,1 @@
+Failed to mount cd:///?devices=/dev/disk/by-id/ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001 on /var/adm/mount/AP_0x00000001: Mounting media failed (mount: no medium found on /dev/sr0)
