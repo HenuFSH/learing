@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE profile>
+<profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <deploy_image>
+    <image_installation config:type="boolean">false</image_installation>
+  </deploy_image>
+  <scripts>
+    <pre-scripts config:type="list">
+      <script>
+        <debug config:type="boolean">true</debug>
+        <feedback config:type="boolean">false</feedback>
+        <feedback_type/>
+        <filename>add-softwore-repositories</filename>
+        <interpreter>shell</interpreter>
+        <location><![CDATA[]]></location>
+        <notification/>
+        <param-list config:type="list"/>
+        <source><![CDATA[zypper ar http://common.sn.stratus.com/sles/12sp2/os/x86_64/ HTTP]]></source>
+      </script>
+    </pre-scripts>
+  </scripts>
+</profile>
