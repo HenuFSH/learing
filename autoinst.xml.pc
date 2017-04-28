@@ -2,7 +2,13 @@
 <!DOCTYPE profile>
 <profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
   <add-on>
-    <add_on_products config:type="list"/>
+    <add_on_products config:type="list">
+      <listentry>
+        <media_url><![CDATA[http://common.sn.stratus.com/sles/12sp2/os/x86_64/]]></media_url>
+        <product>HTTP</product>
+        <product_dir>/</product_dir>
+      </listentry>
+    </add_on_products>
   </add-on>
   <audit-laf>
     <auditd>
@@ -78,24 +84,6 @@
   <deploy_image>
     <image_installation config:type="boolean">false</image_installation>
   </deploy_image>
-  <dhcp-server>
-    <allowed_interfaces config:type="list"/>
-    <chroot>1</chroot>
-    <other_options/>
-    <settings config:type="list">
-      <settings_entry>
-        <children config:type="list"/>
-        <directives config:type="list"/>
-        <id/>
-        <options config:type="list"/>
-        <parent_id/>
-        <parent_type/>
-        <type/>
-      </settings_entry>
-    </settings>
-    <start_service>0</start_service>
-    <use_ldap>0</use_ldap>
-  </dhcp-server>
   <dns-server>
     <allowed_interfaces config:type="list"/>
     <chroot>1</chroot>
